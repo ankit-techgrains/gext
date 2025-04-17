@@ -1,0 +1,34 @@
+[
+  {
+    "name": "demo",
+    "baseUrl": "https://test.com/api",
+    "logLevel": "DEBUG",
+    "applyMock": true,
+    "mockMappingsFile": "assets/mocks/_mappings.json",
+    "params": {
+      "appName": "Demo App",
+      "package": "com.example.getx",
+      "flavour": "Mock",
+      "iOSAppID": "1449956204",
+      "connectionTimeoutInSeconds": 50,
+      "testLoginEmail": "tester30@techgrains.com",
+      "testLoginPassword": "test#123"
+    }
+  },
+  {
+    "name": "live",
+    "baseUrl": "https://reqres.in/api",
+    "logLevel": "DEBUG",
+    "applyMock": false,
+    "mockMappingsFile": "assets/mocks/_mappings.json",
+    "params": {
+      "appName": "Demo App",
+      "package": "com.example.getx",
+      "flavour": "Live",
+      "iOSAppID": "1449956204",
+      "connectionTimeoutInSeconds": 50,
+      "testLoginEmail": "eve.holt@reqres.in",
+      "testLoginPassword": "cityslicka"
+    }
+  }
+]

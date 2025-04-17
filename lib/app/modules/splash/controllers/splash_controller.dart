@@ -1,6 +1,7 @@
 import 'package:getx/common/import/common_getx.dart';
 import 'package:getx/common/import/common_import.dart';
 import 'package:getx/common/import/common_tg_utils.dart';
+import 'package:techgrains/com/techgrains/util/tg_flavor.dart';
 
 class SplashController extends GetxController {
   final count = 0.obs;
@@ -30,7 +31,7 @@ class SplashController extends GetxController {
   }
 
   Future<void> _tgInit() async {
-    await TGService.init(baseUrl: ApiUri.base, headers: AppFunction.defaultHeaders());
+    await TGService.init(baseUrl: TGFlavor.baseUrl(), headers: AppFunction.defaultHeaders());
   }
 
   void goToHomeScreen() {
